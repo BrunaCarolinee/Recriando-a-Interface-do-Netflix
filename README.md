@@ -9,4 +9,4 @@ Recriar a interface do principal site de streaming mundial utilizando tecnologia
 Captura de tela do projeto concluído
 
 
-![tela](https://github.com/BrunaCarolinee/Recriando-a-interface-do-netflix/tree/main/netflix-v-3/imagens/captura-tela)
+![tela](/netflix-v-3/imagens/captura-tela/Captura%20de%20tela%202022-04-06%20140527.png)
