@@ -1,0 +1,167 @@
+:root{
+  --vermelho: #e50914;
+  --preta:#141414;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body{
+  background: var(--preta);
+  font-family: Arial , Times, serif;
+  color: white;
+}
+
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo{
+  color: var(--vermelho);
+  font-family: 'Arial Black',  Times;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #efff;
+}
+
+/* filme principal */
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('/imagens/potters/potterp2.jpg');
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: Noto Serif;
+}
+
+.botao {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: 2s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container{
+  width: 70%;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-fimes {
+  margin-top: 5px;
+}
+
+/* pop-up */
+.img-pop{
+  width: 400px;
+  margin-bottom: 15px;
+  
+}
+
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 4px solid black;
+  background-color: rgba(41, 39, 39, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+
+.pou-upContainer {
+  width: 100vh;
+  height: 100vh;
+  /* background: rgba(0,0,0,.5); */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.pou-upContainer.mostar{
+  display: flex;
+}
+
+.conteudo {
+  background-color: black;
+  width: 80%;
+  min-width: 200px;
+  padding: 40px;
+  position: relative;
+}
+
+@keyframes conteudo {
+  from {
+     opacity: 0;
+     transform: translate3d(0, -60px, 0);
+  }
+  to {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostar .conteudo{
+  animation: conteudo .3s;
+}
